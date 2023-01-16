@@ -6,8 +6,8 @@
         class="grey--text"
       ></v-app-bar-nav-icon>
       <v-img
-        src="/assets/posawesome/js/posapp/components/pos/pos.png"
-        alt="POS Awesome"
+        src="/assets/posawesome/js/posapp/components/pos/gt-icon.png"
+        alt="POS"
         max-width="32"
         class="mr-2"
         color="primary"
@@ -17,8 +17,7 @@
         style="cursor: pointer"
         class="text-uppercase primary--text"
       >
-        <span class="font-weight-light">pos</span>
-        <span>awesome</span>
+        <span>Guava Technologies</span>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
@@ -73,14 +72,7 @@
                     <v-list-item-title>{{ __('Logout') }}</v-list-item-title>
                   </v-list-item-content>
                 </v-list-item>
-                <v-list-item @click="go_about">
-                  <v-list-item-icon>
-                    <v-icon>mdi-information-outline</v-icon>
-                  </v-list-item-icon>
-                  <v-list-item-content>
-                    <v-list-item-title>{{ __('About') }}</v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
+               
               </v-list-item-group>
             </v-list>
           </v-card>
@@ -143,7 +135,7 @@ export default {
   // components: {MyPopup},
   data() {
     return {
-      drawer: false,
+      drawer: true,
       mini: true,
       item: 0,
       items: [{ text: 'POS', icon: 'mdi-point-of-sale' }],
